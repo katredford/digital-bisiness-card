@@ -1,0 +1,225 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body {
+  background-image: url("./assets/background-3105096_1280.jpg");
+  background-color: rgba(51, 8, 8, 0.94);
+  background-blend-mode: hue;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 71px;
+  background-image: url("./assets/Crystal-Cave.purple.png");
+  background-size: cover;
+  background-color: rgb(255 255 255);
+  background-blend-mode: exclusion;
+  width: 500px;
+  height: 800px;
+  box-shadow:
+    0px 0px 174px rgb(235, 62, 212),
+    0px 0px 7px white,
+    0px 0px 0px white,
+    0px 0px 0px white
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: rgb(119, 73, 203);
+  margin: 10px;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.header div {
+  background-image: url("./assets/background-3105096_1280.jpg");
+  background-color: rgba(32, 6, 6, 0.94);
+  background-blend-mode: hue;
+  border-radius: 25px;
+  height: 75px;
+  box-shadow:
+    0px 0px 15px rgb(235, 62, 212),
+    0px 0px 15px white;
+
+}
+
+.header--name {
+  color: #000000;
+  margin: 5px 0px 0px 22px;
+  text-shadow: -1px 0 11px #f30fb1,
+    0 1px 3px #f30fb1,
+    0 -1px 5px #f30fb1;
+  }
+
+.header--title {
+  color: #000000;
+  margin: 0px 0px 0px 22px;
+  text-shadow: -1px 0 11px #ffa435,
+    0 1px 3px #ffffff,
+    0 -1px 5px #ffa435;
+}
+
+.picture {
+  width: 300px;
+  border-radius: 25px;
+  box-shadow:
+    0px 0px 15px rgb(235, 62, 212),
+    0px 0px 15px white;
+}
+
+.info {
+  background-color: #000000;
+
+  width: 437px;
+  height: 186px;
+  border-radius: 25px;
+  margin: 20px;
+  box-shadow:
+    0px 0px 15px rgb(235, 62, 212),
+    0px 0px 15px white;
+  opacity: 78%;
+
+}
+
+.info--p {
+  margin: 20px;
+}
+
+.info--box {
+  position: absolute;
+  left: 11px;
+  top: 2px;
+  color: #f36a0f;
+  width: 437px;
+  margin: 20px;
+}
+
+.info--parent {
+  position: relative;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact  a{
+  font-size: 25px;
+  color: #ffa435;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: rgb(255, 255, 47);
+  text-shadow: -1px 0 11px #f30fb1,
+      0 1px 3px #f30fb1,
+      0 -1px 5px #f30fb1;
+}
+@media screen and (max-width: 400px) {
+
+  .app {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info--parent {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .info--box {
+    width: 95%;
+    font-size: 14px;
+    /* height: 75%; */
+
+
+    margin: 10px 10px 10px -19px;
+  }
+
+  .info--p {
+    width: 100%;
+  }
+
+  .picture {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+  }
+
+  .header {
+    width: 85%;
+
+  }
+
+  .header--name {
+    margin: 5px 0px 0px 0px;
+
+  }
+
+  .header--title {
+    margin: 0px;
+
+  }
+}
